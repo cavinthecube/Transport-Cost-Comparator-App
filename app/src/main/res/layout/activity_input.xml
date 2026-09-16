@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Input">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Pick 1st travel day"
+            android:textColor="@color/orange"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <DatePicker
+            android:textColor="@color/black"
+            android:id="@+id/startDP"
+            android:layout_width="300dp"
+            android:layout_height="450dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Pick last travel day"
+            android:textColor="@color/orange"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <DatePicker
+            android:id="@+id/endDP"
+            android:layout_width="300dp"
+            android:layout_height="450dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:textSize="20dp"/>
+
+        <EditText
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:id="@+id/modeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mode of Transport"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:id="@+id/distanceET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Distance Travelled per Day (km)"
+            android:inputType="numberDecimal"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:id="@+id/costET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Cost per Kilometre (R/km)"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Transport Type:"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/categorySp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/calcBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate And Save"
+            android:backgroundTint="@color/orange"
+            android:textSize="30dp" />
+        <Button
+            android:id="@+id/clearBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:backgroundTint="@color/orange"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

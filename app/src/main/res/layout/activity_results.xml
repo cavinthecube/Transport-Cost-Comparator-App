@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Results">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:text="Results"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/resultsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="@color/orange"
+                android:padding="20dp"
+                android:text="results"/>
+
+            <Button
+                android:id="@+id/calcAgnBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate Again"
+                android:backgroundTint="@color/orange"
+                android:textSize="30dp"/>
+
+            <Button
+                android:id="@+id/exitBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exit"
+                android:backgroundTint="@color/orange"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textColor="@color/orange"
+                android:text="If calculations appear incorrect:
+
+Verify all input values.
+
+Ensure a travel date has been selected.
+
+Confirm that distance and cost are numeric values.
+
+Save the calculation before viewing reports."/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
